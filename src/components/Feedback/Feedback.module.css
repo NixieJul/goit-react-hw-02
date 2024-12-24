@@ -1,4 +1,11 @@
 .list {
   list-style: none;
   padding: 0;
+  color: black;
+  margin-left: 15px;
+}
+
+h2{
+  color: black;
+  margin-left: 15px;
 }

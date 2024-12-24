@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./Feedback.module.css";
 
 const Feedback = ({ feedback, total, positivePercentage }) => (
-  <div className={styles.feedback}>
+  <div className={styles.container}>
     <h2>Statistics</h2>
     <ul className={styles.list}>
       <li>Good: {feedback.good}</li>

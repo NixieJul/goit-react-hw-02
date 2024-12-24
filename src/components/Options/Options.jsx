@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./Options.module.css";
 
 const Options = ({ options, onLeaveFeedback, onResetFeedback, total }) => (
-  <div className={styles.options}>
+  <div className={styles.container}>
     {options.map((option) => (
       <button
         key={option}
@@ -16,7 +16,7 @@ const Options = ({ options, onLeaveFeedback, onResetFeedback, total }) => (
     {total > 0 && (
       <button
         type="button"
-        className={`${styles.button} ${styles.reset}`}
+        className={styles.button}
         onClick={onResetFeedback}
       >
         Reset
